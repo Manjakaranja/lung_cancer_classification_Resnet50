@@ -32,7 +32,7 @@ After 16 versions, this repository presents the final version of a deep learning
 
 - **Validation Accuracy:** 98.66%  
 - **Test Accuracy:** 99%  
-- **No overfitting observed** — validation metrics closely follow training metrics.
+- **At first glance there's no overfitting observed** — validation metrics closely follow training metrics.
 
 ## 📄 License
 
