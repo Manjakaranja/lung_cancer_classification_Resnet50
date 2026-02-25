@@ -46,6 +46,11 @@ After re-reading the code, there seems to be some Data Leakage...
 To prevent this, we will try to :
 - **Hash before resizing to detect true duplicates**
 
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
 ## Technology Stack
 
 ### Deep Learning Framework
