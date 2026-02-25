@@ -1,7 +1,7 @@
 # lung_cancer_classificition_Resnet50
 After 16 versions, this repository presents the final version of a deep learning-based classifier for lung cancer, distinguishing between three carcinoma subtypes.
 
-## 📚 Dataset
+## Dataset
 
 - **Name:** LC25000 – Lung and Colon Cancer Histopathological Images  
 - **Original Source:**  
@@ -11,7 +11,7 @@ After 16 versions, this repository presents the final version of a deep learning
 - **Composition:**  
   15,000 images (5000 per class)
 
-## ⚙️ Preprocessing
+## Preprocessing
 
 - Removal of duplicate images using image hashing (MD5)  
 - Class balance maintained  
@@ -20,7 +20,7 @@ After 16 versions, this repository presents the final version of a deep learning
 - Augmentation: rotation, zoom, flips (for training only)  
 - Stratified split into train/val/test sets with no data leakage  
 
-## 🧠 Model
+## Model
 
 - Pre-trained ResNet50 (ImageNet weights)  
 - Final layer adjusted for 3-class classification  
@@ -28,11 +28,18 @@ After 16 versions, this repository presents the final version of a deep learning
 - Adam optimizer  
 - Accuracy and F1-score used for evaluation  
 
-## 📈 Results
+## Results
 
 - **Validation Accuracy:** 98.66%  
 - **Test Accuracy:** 99%  
-- **At first glance there's no overfitting observed** — validation metrics closely follow training metrics.
+- **Good possibility of OVERFITTING.**
+
+## What next ?
+
+After testing on Render, we observe clear overfitting.
+We will try to address this issue with :
+- **K-fold cross-validation**
+- **Grid sreach**
 
 ## 📄 License
 
