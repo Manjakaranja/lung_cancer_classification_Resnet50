@@ -38,9 +38,52 @@ After 16 versions, this repository presents the final version of a deep learning
 
 After testing on Render, we observe clear overfitting.
 We will try to address this issue with :
+- **Adding regularization layers**
 - **K-fold cross-validation**
 - **Grid sreach**
 
-## 📄 License
+After re-reading the code, there seems to be some Data Leakage...
+To prevent this, we will try to :
+- **Hash before resizing to detect true duplicates**
+
+## Technology Stack
+
+### Deep Learning Framework
+- **TensorFlow 2.x** - Core deep learning framework
+- **Keras** - High-level API for model construction
+- **ResNet50** - Pre-trained convolutional neural network architecture
+
+### Experiment Tracking & Model Registry
+- **MLflow** - Tracking hyperparameters, metrics, and model versions
+- **MLflow Model Registry** - Versioning and staging trained models
+
+### Data Processing
+- **OpenCV (cv2)** - Image loading and preprocessing
+- **NumPy** - Array operations and data manipulation
+- **Hashlib (MD5)** - Duplicate image detection and removal
+
+### Visualization
+- **Matplotlib** - Training curves and result visualization
+- **Seaborn** - Confusion matrix visualization
+
+### Model Training Utilities
+- **Scikit-learn** - Train/test splitting, stratification, metrics calculation
+- **ImageDataGenerator** - Real-time data augmentation
+- **EarlyStopping** - Prevent overfitting by monitoring validation loss
+- **ReduceLROnPlateau** - Adaptive learning rate scheduling
+
+### Hyperparameter Optimization
+- **GridSearchCV** - Systematic hyperparameter tuning
+- **K-fold Cross-Validation** - Robust model evaluation
+
+### Hardware Acceleration
+- **Multi-GPU support** - TensorFlow MirroredStrategy for distributed training
+- **CUDA/cuDNN** - GPU acceleration for faster training
+
+### Model Serialization
+- **HDF5 format (.h5)** - Model saving and loading
+- **Timestamp-based versioning** - Automatic model checkpointing
+
+## License
 
 Released under the **MIT License** to promote open collaboration while maintaining author credit.
