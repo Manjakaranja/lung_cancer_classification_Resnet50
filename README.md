@@ -1,6 +1,9 @@
 # lung_cancer_classificition_Resnet50
 After 16 versions, this repository presents the final version of a deep learning-based classifier for lung cancer, distinguishing between three carcinoma subtypes.
 
+# Have a try ! 
+Deployment website : https://medical-classifier.onrender.com/      
+
 ## Dataset
 
 - **Name:** LC25000 – Lung and Colon Cancer Histopathological Images  
